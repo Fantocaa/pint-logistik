@@ -1,17 +1,38 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
+  const handleBackToTopClick = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", () => {
+      const backToTopButton = document.getElementById("back-to-top-button");
+      if (backToTopButton) {
+        if (window.scrollY > 400) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      }
+    });
+  }
+
   const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="bg-darkpint">
         <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
-            <Link
+            <button
+              onClick={handleBackToTopClick}
               className="inline-block rounded-full bg-bluepint-500 p-2 text-white shadow transition hover:bg-bluepint-300 sm:p-3 lg:p-4"
-              href="/"
             >
               <span className="sr-only">Back to top</span>
 
@@ -27,7 +48,7 @@ export default function Footer() {
                   clipRule="evenodd"
                 />
               </svg>
-            </Link>
+            </button>
           </div>
 
           <div className="lg:flex lg:items-end lg:justify-between">
