@@ -1,16 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <footer className="bg-gray-100">
+      <footer className="bg-darkpint">
         <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
-            <a
-              className="inline-block rounded-full bg-teal-600 p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4"
-              href="#MainContent"
+            <Link
+              className="inline-block rounded-full bg-bluepint-500 p-2 text-white shadow transition hover:bg-bluepint-300 sm:p-3 lg:p-4"
+              href="/"
             >
               <span className="sr-only">Back to top</span>
 
@@ -26,7 +27,7 @@ export default function Footer() {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="lg:flex lg:items-end lg:justify-between">
@@ -40,7 +41,7 @@ export default function Footer() {
                 />
               </div>
 
-              <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
+              <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-100 lg:text-left">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Incidunt consequuntur amet culpa cum itaque neque.
               </p>
@@ -48,48 +49,38 @@ export default function Footer() {
 
             <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
               <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                <Link
+                  className="text-gray-100 transition hover:text-gray-100/75"
+                  href="/"
+                >
+                  {" "}
+                  Home{" "}
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className="text-gray-100 transition hover:text-gray-100/75"
+                  href="/about"
                 >
                   {" "}
                   About{" "}
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
+                <Link
+                  className="text-gray-100 transition hover:text-gray-100/75"
+                  href="/services"
                 >
                   {" "}
                   Services{" "}
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
-                >
-                  {" "}
-                  Projects{" "}
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="#"
-                >
-                  {" "}
-                  Blog{" "}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
+          <p className="mt-12 text-center text-sm text-gray-200 lg:text-right">
             Copyright &copy; {currentYear}. PT. PINT INDONESIA LOGISTIK. All
             rights reserved.
           </p>

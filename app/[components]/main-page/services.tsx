@@ -10,10 +10,10 @@ export default function Services() {
     <>
       <section className="bg-darkpint text-white">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-          <div className="flex justify-between mb-12">
+          <div className="flex justify-between mb-12 items-center">
             <div className="font-bold">
-              <h1 className="text-4xl">How do we </h1>
-              <h1 className="text-4xl">
+              <h1 className="text-5xl">How do we </h1>
+              <h1 className="text-5xl">
                 <span className="text-redpint-500">Deliver</span> your{" "}
                 <span className="text-bluepint-500">Packages</span>
               </h1>

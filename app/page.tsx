@@ -14,7 +14,7 @@ export default function Home() {
       <WhyChooseUs />
       <Services />
       <Member />
-      <Galery />
+      {/* <Galery /> */}
       <ServicesArea />
     </main>
   );
