@@ -16,25 +16,27 @@ export default function WhyChooseUs() {
                     <span className="text-bluepint-500">C.A.R.E</span>
                   </h1>
                 </div>
-                <p className="mt-4 text-gray-600">
+                <p className="mt-4 text-gray-600 2xl:text-xl">
                   This is the reason why you should use our services instead of
                   using other shipping agency
                 </p>
               </div>
             </div>
             <div className="flex items-start gap-4 bg-gray-50 p-4 self-end rounded-xl">
-              <span className="shrink-0 rounded-lg bg-red-100 p-4">
+              <span className="shrink-0 rounded-lg bg-red-100 p-6">
                 <Image
                   src="/images/commit.svg"
                   alt="accurate"
-                  width={40}
-                  height={40}
+                  width={64}
+                  height={64}
                 />
               </span>
 
               <div>
-                <h2 className=" font-bold text-darkpint text-xl">Commitment</h2>
-                <p className="mt-1 text-sm text-gray-500">
+                <h2 className=" font-bold text-darkpint text-2xl">
+                  Commitment
+                </h2>
+                <p className="mt-1 text-gray-500">
                   Solusi logistik yang bertanggung jawab, andal, dan fleksibel,
                   dirancang khusus untuk memenuhi kebutuhan bisnis Anda.
                 </p>
@@ -42,17 +44,17 @@ export default function WhyChooseUs() {
             </div>
 
             <div className="flex items-start gap-4 bg-gray-50 p-4 rounded-xl">
-              <span className="shrink-0 rounded-lg bg-blue-100 p-4">
+              <span className="shrink-0 rounded-lg bg-blue-100 p-6">
                 <Image
                   src="/images/accurate.svg"
                   alt="accurate"
-                  width={40}
-                  height={40}
+                  width={64}
+                  height={64}
                 />
               </span>
               <div>
-                <h2 className=" font-bold text-darkpint text-xl">Accurate</h2>
-                <p className="mt-1 text-sm text-gray-500">
+                <h2 className=" font-bold text-darkpint text-2xl">Accurate</h2>
+                <p className="mt-1 text-gray-500">
                   Kami memastikan menjalankan tugas dengan baik tanpa ada
                   kesalahan untuk layanan terbaik kepada pelanggan kami.
                 </p>
@@ -60,18 +62,20 @@ export default function WhyChooseUs() {
             </div>
 
             <div className="flex items-start gap-4 bg-gray-50 p-4 rounded-xl">
-              <span className="shrink-0 rounded-lg bg-green-100 p-4">
+              <span className="shrink-0 rounded-lg bg-green-100 p-6">
                 <Image
                   src="/images/responsive.svg"
                   alt="accurate"
-                  width={40}
-                  height={40}
+                  width={64}
+                  height={64}
                 />
               </span>
 
               <div>
-                <h2 className=" font-bold text-darkpint text-xl">Responsive</h2>
-                <p className="mt-1 text-sm text-gray-500">
+                <h2 className=" font-bold text-darkpint text-2xl">
+                  Responsive
+                </h2>
+                <p className="mt-1 text-gray-500">
                   Kami memastikan menjalankan tugas dengan baik tanpa ada
                   kesalahan untuk layanan terbaik kepada pelanggan kami.
                 </p>
@@ -79,21 +83,21 @@ export default function WhyChooseUs() {
             </div>
 
             <div className="flex items-start gap-4 bg-gray-50 p-4 rounded-xl">
-              <span className="shrink-0 rounded-lg bg-yellow-100 p-4">
+              <span className="shrink-0 rounded-lg bg-yellow-100 p-6">
                 <Image
                   src="/images/service.svg"
                   alt="accurate"
-                  width={40}
-                  height={40}
+                  width={64}
+                  height={64}
                 />
               </span>
 
               <div>
-                <h2 className=" font-bold text-darkpint text-xl">
+                <h2 className=" font-bold text-darkpint text-2xl">
                   Excelent Services
                 </h2>
 
-                <p className="mt-1 text-sm text-gray-500">
+                <p className="mt-1 text-gray-500">
                   Kami memastikan menjalankan tugas dengan baik tanpa ada
                   kesalahan untuk layanan terbaik kepada pelanggan kami.
                 </p>
