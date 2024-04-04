@@ -1,5 +1,4 @@
 import React from "react";
-import ImageTextHeader from "@/components/main-page/image-text-header";
 import { Button } from "@/components/ui/button";
 import MarqueeText from "@/components/main-page/marquee-header";
 import Image from "next/image";
@@ -18,7 +17,7 @@ export default function Header() {
       <div className="relative mx-auto max-w-screen-xl px-4 pt-32 pb-16 sm:px-6 lg:flex lg:items-center lg:px-8 justify-between">
         <div className="text-left ltr:sm:text-left rtl:sm:text-right max-w-xl">
           <h3>About Us</h3>
-          <Image
+          {/* <Image
             src="/images/smoothinnercorner red.svg"
             alt="red"
             width={64}
@@ -31,7 +30,7 @@ export default function Header() {
             width={64}
             height={64}
             className="absolute inset-x-[480px] w-12 h-12"
-          />
+          /> */}
           <h1 className="text-3xl font-extrabold sm:text-5xl">
             <span className="text-bluepint-500 leading-tight">More</span> than
             just a <span className="text-redpint-500">Logistic</span> with{" "}
