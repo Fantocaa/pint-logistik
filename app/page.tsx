@@ -5,6 +5,7 @@ import Services from "./[components]/main-page/services";
 import Member from "./[components]/main-page/member";
 import Galery from "./[components]/main-page/galery";
 import ServicesArea from "./[components]/main-page/servicearea";
+import { TypewriterEffectDemo } from "./[components]/main-page/cta";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <Services />
       <Member />
       {/* <Galery /> */}
-      <ServicesArea />
+      {/* <ServicesArea /> */}
+      {/* <TypewriterEffectDemo /> */}
     </main>
   );
 }

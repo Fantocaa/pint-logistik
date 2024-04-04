@@ -120,7 +120,16 @@ export default function NavigationBar() {
               <div className="flex items-center gap-4">
                 <div className="sm:flex sm:gap-4">
                   <Link href="https://wa.link/qnedf4" target="_blank">
-                    <Button variant="secondary">Hubungi Kami</Button>
+                    <Button variant="secondary">
+                      <Image
+                        src="/images/call-calling.svg"
+                        alt="telp"
+                        width={24}
+                        height={24}
+                        className="mr-2"
+                      />
+                      Hubungi Kami
+                    </Button>
                   </Link>
                 </div>
               </div>
