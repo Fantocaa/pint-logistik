@@ -9,8 +9,8 @@ export default function VisiMisi() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="relative h-64 overflow-hidden rounded-lg sm:h-80">
             <Image
-              alt=""
-              src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+              alt="vision"
+              src="/images/missioni.jpg"
               className="absolute inset-0 h-full w-full object-cover"
               width={1080}
               height={1080}
@@ -18,50 +18,49 @@ export default function VisiMisi() {
           </div>
 
           <div className="lg:py-24">
-            <h2 className="text-3xl font-bold sm:text-4xl">
-              Grow your audience
-            </h2>
+            <h2 className="text-3xl font-bold sm:text-4xl">Our Vision</h2>
 
             <p className="mt-4 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui
-              hic atque tenetur quis eius quos ea neque sunt, accusantium soluta
-              minus veniam tempora deserunt? Molestiae eius quidem quam
-              repellat.
+              {/* Menjadi perusahaan Logistik yang handal dan terpercaya di
+              Indonesia */}
+              Visi kami adalah menjadi perusahaan logistik yang handal,
+              terpercaya, dan terkemuka di seluruh Indonesia.
             </p>
-
-            <a
-              href="#"
-              className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
-            >
-              Get Started Today
-            </a>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 ">
           <div className="lg:py-24">
-            <h2 className="text-3xl font-bold sm:text-4xl">
-              Grow your audience
-            </h2>
-
-            <p className="mt-4 text-gray-600">
+            <h2 className="text-3xl font-bold sm:text-4xl">Our Mission</h2>
+            {/* <p className="mt-4 text-gray-600">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui
               hic atque tenetur quis eius quos ea neque sunt, accusantium soluta
               minus veniam tempora deserunt? Molestiae eius quidem quam
               repellat.
-            </p>
-
-            <a
-              href="#"
-              className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
-            >
-              Get Started Today
-            </a>
+            </p> */}
+            <ul className="mt-4 ml-5 text-gray-600 list-disc list-outside ">
+              <li>
+                Memberikan layanan jasa logistik yang mampu menjadi solusi
+                terbaik dan tepat sesuai kebutuhan customer
+              </li>
+              <li>
+                Membangun hubungan kerjasama yang bertanggung jawab dalam setiap
+                perkerjaan yang dipercayakan
+              </li>
+              <li>
+                Membentuk tim profesional yang berkualitas, terpercaya dan terus
+                berinovasi dalam setiap kebutuhan customer
+              </li>
+              <li>
+                Berkomitmen memberikan pelayanan jasa logistik yang efektif,
+                efisien, dan akurat
+              </li>
+            </ul>
           </div>
           <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
             <Image
-              alt=""
-              src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+              alt="mission"
+              src="/images/vision.jpg"
               className="absolute inset-0 h-full w-full object-cover"
               width={1080}
               height={1080}

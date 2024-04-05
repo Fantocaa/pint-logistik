@@ -43,7 +43,7 @@ export default function Header() {
             agency
           </h1>
           <div className="flex gap-4 pt-4">
-            <Button className="rounded-full">Get Started</Button>
+            {/* <Button className="rounded-full">Get Started</Button> */}
             <Link href="/about">
               <Button className="rounded-full">About Us</Button>
             </Link>

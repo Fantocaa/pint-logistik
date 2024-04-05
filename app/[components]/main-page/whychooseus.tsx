@@ -29,6 +29,7 @@ export default function WhyChooseUs() {
                   alt="accurate"
                   width={64}
                   height={64}
+                  className="lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
                 />
               </span>
 
@@ -50,6 +51,7 @@ export default function WhyChooseUs() {
                   alt="accurate"
                   width={64}
                   height={64}
+                  className="lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
                 />
               </span>
               <div>
@@ -68,6 +70,7 @@ export default function WhyChooseUs() {
                   alt="accurate"
                   width={64}
                   height={64}
+                  className="lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
                 />
               </span>
 
@@ -89,6 +92,7 @@ export default function WhyChooseUs() {
                   alt="accurate"
                   width={64}
                   height={64}
+                  className="lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
                 />
               </span>
 
