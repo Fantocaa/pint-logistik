@@ -6,11 +6,13 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, useAnimation } from "framer-motion";
+import { Navbar } from "flowbite-react";
 
 export default function NavigationBar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0); // State untuk menyimpan posisi scroll sebelumnya
   const [isVisible, setIsVisible] = useState(true); // State untuk mengontrol keterlihatan navbar
   const controls = useAnimation(); // Controls untuk mengontrol animasi dengan Framer Motion
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,8 +55,25 @@ export default function NavigationBar() {
     }
   }, [isVisible, controls]);
 
+  // const toggleMobileMenu = () => {
+  //   setIsMobileMenuOpen(!isMobileMenuOpen);
+  // };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [isOpen, controls]);
+
   return (
     <>
+      {/* {!isMobileView && ( */}
       <header>
         <motion.div
           className="fixed top-0 left-0 right-0 z-50 bg-darkpint bg-opacity-95"
@@ -73,9 +92,31 @@ export default function NavigationBar() {
                     alt="logo"
                     width={160}
                     height={64}
-                    // className="h-16"
+                    className="w-32 md:w-40"
                   />
                 </Link>
+              </div>
+
+              <div className="md:hidden">
+                <button
+                  onClick={toggleMenu}
+                  className="text-white focus:outline-none"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
               </div>
 
               <div className="hidden md:block">
@@ -137,6 +178,43 @@ export default function NavigationBar() {
           </div>
         </motion.div>
       </header>
+      {/* )} */}
+
+      {/* {isMobileView && (
+        <Navbar
+          fluid
+          rounded
+          className={
+            isMobileView
+              ? "fixed top-0 w-full z-50 bg-darkpint"
+              : "hidden md:block"
+          }
+        >
+          <Navbar.Brand href="/">
+            <Image
+              src="/logo/pintlogo.svg"
+              alt="logo"
+              width={128}
+              height={64}
+            />
+          </Navbar.Brand>
+          {isMobileView && (
+            <div className="flex md:order-2">
+              <Button>Hubungi Sekarang</Button>
+              <Navbar.Toggle onClick={toggleMobileMenu} />
+            </div>
+          )}
+          <Navbar.Collapse className={isMobileMenuOpen ? "block" : "hidden"}>
+            <Navbar.Link href="#" active>
+              Home
+            </Navbar.Link>
+            <Navbar.Link href="#">About</Navbar.Link>
+            <Navbar.Link href="#">Services</Navbar.Link>
+            <Navbar.Link href="#">Pricing</Navbar.Link>
+            <Navbar.Link href="#">Contact</Navbar.Link>
+          </Navbar.Collapse>
+        </Navbar>
+      )} */}
     </>
   );
 }

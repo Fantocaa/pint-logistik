@@ -13,7 +13,7 @@ export default function Header() {
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
       {/* <div className="relative h-full w-full bg-white"> */}
       {/* <div className=" absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div> */}
-      <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+      {/* <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div> */}
       <div className="relative mx-auto max-w-screen-xl px-4 pt-32 pb-16 sm:px-6 lg:flex lg:items-center lg:px-8 justify-between">
         <div className="text-left ltr:sm:text-left rtl:sm:text-right max-w-xl">
           <h3>About Us</h3>
@@ -38,7 +38,9 @@ export default function Header() {
           </h1>
         </div>
         <div className="max-w-md">
-          <h1 className="font-bold pb-2">PT. PINT INDONESIA LOGISTIK</h1>
+          <h1 className="font-bold pt-8 md:pt-0 pb-2">
+            PT. PINT INDONESIA LOGISTIK
+          </h1>
           <p>
             Menjadi perusahaan logistik yang handal dan terpercaya di Indonesia.
             Dengan komitmen kami terhadap layanan pelanggan yang unggul, inovasi

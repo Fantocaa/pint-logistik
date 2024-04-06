@@ -29,15 +29,9 @@ export default function VisiMisi() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 ">
-          <div className="lg:py-24">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 py-16 md:py-0">
+          <div className="lg:py-24 order-last">
             <h2 className="text-3xl font-bold sm:text-4xl">Our Mission</h2>
-            {/* <p className="mt-4 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui
-              hic atque tenetur quis eius quos ea neque sunt, accusantium soluta
-              minus veniam tempora deserunt? Molestiae eius quidem quam
-              repellat.
-            </p> */}
             <ul className="mt-4 ml-5 text-gray-600 list-disc list-outside ">
               <li>
                 Memberikan layanan jasa logistik yang mampu menjadi solusi

@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/components/navbar-footer/footer";
 import localFont from "next/font/local";
 import ServicesArea from "./[components]/main-page/servicearea";
+import NavbarFlowbite from "@/components/navbar-footer/navbar-flowbite";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavigationBar />
+        {/* <NavigationBar /> */}
+        <NavbarFlowbite />
         {children}
         <ServicesArea />
         <Footer />

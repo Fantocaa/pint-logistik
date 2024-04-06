@@ -63,13 +63,13 @@ export default function ServicesArea() {
     <>
       {/* <section className="bg-darkpint"> */}
       <div className="relative h-full w-full bg-darkpint">
-        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        {/* <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div> */}
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-32 relative z-10">
           <h1 className="text-white text-center pb-4 text-xl">
             Our Services Area
           </h1>
-          <div className="max-w-screen-md 2xl:max-w-screen-lg mx-auto pb-32 flex flex-col items-center">
-            <TypewriterEffect words={words} className="text-center" />
+          <div className=" md:max-w-screen-md 2xl:max-w-screen-lg mx-auto pb-32 flex flex-col items-center">
+            <TypewriterEffect words={words} className="text-center text-2xl" />
             <Link href="https://wa.link/qnedf4">
               <Button className="mt-4" variant={"secondary"}>
                 Contact Us
@@ -84,7 +84,18 @@ export default function ServicesArea() {
               height={2560}
               className="mx-auto w-full h-full"
             />
-            <div className="absolute top-0 left-0 w-full h-full">
+            {/* <video width="320" height="240" controls preload="none">
+              <source src="/path/to/video.mp4" type="video/mp4" />
+              <track
+                src="/path/to/captions.vtt"
+                kind="subtitles"
+                srcLang="en"
+                label="English"
+              />
+              Your browser does not support the video tag.
+            </video> */}
+
+            <div className="hidden md:block">
               {/* Sumatera */}
               <TooltipProvider delayDuration={100}>
                 <Tooltip>

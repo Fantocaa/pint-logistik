@@ -4,16 +4,20 @@ import React from "react";
 export default function WhyChooseUs() {
   return (
     <>
-      <section className="">
+      <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div className="my-8 grid grid-cols-1 gap-4 md:my-16 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
-            <div className="flex items-start gap-4 col-span-2">
+            <div className="flex items-start gap-4 md:col-span-2">
               <div className="max-w-xl pb-4">
                 <div className="font-bold col-span-3">
-                  <h1 className="text-5xl leading-snug">Deliver your </h1>
-                  <h1 className="text-5xl">
+                  <h1 className="text-3xl md:text-5xl leading-snug">
+                    Deliver your{" "}
+                  </h1>
+                  <h1 className="text-3xl md:text-5xl">
                     <span className="text-redpint-500">Logistic</span> with{" "}
-                    <span className="text-bluepint-500">C.A.R.E</span>
+                    <span className="text-bluepint-500 leading-snug">
+                      C.A.R.E
+                    </span>
                   </h1>
                 </div>
                 <p className="mt-4 text-gray-600 2xl:text-xl">
@@ -22,14 +26,14 @@ export default function WhyChooseUs() {
                 </p>
               </div>
             </div>
-            <div className="flex items-start gap-4 bg-gray-50 p-4 self-end rounded-xl">
+            <div className="flex items-start gap-4 bg-gray-50 p-4 md:self-end rounded-xl">
               <span className="shrink-0 rounded-lg bg-red-100 p-6">
                 <Image
                   src="/images/commit.svg"
                   alt="accurate"
                   width={64}
                   height={64}
-                  className="lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
+                  className="w-10 h-10 lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
                 />
               </span>
 
@@ -51,7 +55,7 @@ export default function WhyChooseUs() {
                   alt="accurate"
                   width={64}
                   height={64}
-                  className="lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
+                  className="w-10 h-10 lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
                 />
               </span>
               <div>
@@ -70,7 +74,7 @@ export default function WhyChooseUs() {
                   alt="accurate"
                   width={64}
                   height={64}
-                  className="lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
+                  className="w-10 h-10 lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
                 />
               </span>
 
@@ -92,7 +96,7 @@ export default function WhyChooseUs() {
                   alt="accurate"
                   width={64}
                   height={64}
-                  className="lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
+                  className="w-10 h-10 lg:w-12 lg:h-12 2xl:w-16 2xl:h-16"
                 />
               </span>
 

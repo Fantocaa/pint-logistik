@@ -9,7 +9,7 @@ export default function ImageTextHeader() {
         alt="header"
         width={2560}
         height={2560}
-        className="w-full mx-auto xl:object-top xl:h-96 2xl:h-full object-cover"
+        className="w-full mx-auto xl:object-top h-96 2xl:h-full object-cover"
       />
     </div>
   );

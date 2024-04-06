@@ -7,8 +7,8 @@ export default function MarqueeText() {
     <>
       <div className="bg-darkpint text-white">
         <Marquee>
-          <span className="text-4xl mx-6">SHIPPING</span>
-          <span className="text-4xl mx-6">
+          <span className="text-xl md:text-4xl mx-6">SHIPPING</span>
+          <span className="text-xl md:text-4xl mx-6">
             <Image
               src="/images/smoothinnercorner.svg"
               alt="star"
@@ -17,8 +17,8 @@ export default function MarqueeText() {
               className="h-8 w-8"
             />
           </span>
-          <span className="text-4xl mx-6">DELIVERY</span>
-          <span className="text-4xl mx-6">
+          <span className="text-xl md:text-4xl mx-6">DELIVERY</span>
+          <span className="text-xl md:text-4xl mx-6">
             <Image
               src="/images/smoothinnercorner.svg"
               alt="star"
@@ -27,8 +27,8 @@ export default function MarqueeText() {
               className="h-8 w-8"
             />
           </span>
-          <span className="text-4xl mx-6">SAFETY</span>
-          <span className="text-4xl mx-6">
+          <span className="text-xl md:text-4xl mx-6">SAFETY</span>
+          <span className="text-xl md:text-4xl mx-6">
             <Image
               src="/images/smoothinnercorner.svg"
               alt="star"
@@ -37,8 +37,8 @@ export default function MarqueeText() {
               className="h-8 w-8"
             />
           </span>
-          <span className="text-4xl mx-6">SHIPPING</span>
-          <span className="text-4xl mx-6">
+          <span className="text-xl md:text-4xl mx-6">SHIPPING</span>
+          <span className="text-xl md:text-4xl mx-6">
             <Image
               src="/images/smoothinnercorner.svg"
               alt="star"
@@ -47,8 +47,8 @@ export default function MarqueeText() {
               className="h-8 w-8"
             />
           </span>
-          <span className="text-4xl mx-6">DELIVERY</span>
-          <span className="text-4xl mx-6">
+          <span className="text-xl md:text-4xl mx-6">DELIVERY</span>
+          <span className="text-xl md:text-4xl mx-6">
             <Image
               src="/images/smoothinnercorner.svg"
               alt="star"
@@ -57,8 +57,8 @@ export default function MarqueeText() {
               className="h-8 w-8"
             />
           </span>
-          <span className="text-4xl mx-6">SAFETY</span>
-          <span className="text-4xl mx-6">
+          <span className="text-xl md:text-4xl mx-6">SAFETY</span>
+          <span className="text-xl md:text-4xl mx-6">
             <Image
               src="/images/smoothinnercorner.svg"
               alt="star"
@@ -67,8 +67,8 @@ export default function MarqueeText() {
               className="h-8 w-8"
             />
           </span>
-          <span className="text-4xl mx-6">SHIPPING</span>
-          <span className="text-4xl mx-6">
+          <span className="text-xl md:text-4xl mx-6">SHIPPING</span>
+          <span className="text-xl md:text-4xl mx-6">
             <Image
               src="/images/smoothinnercorner.svg"
               alt="star"
@@ -77,8 +77,8 @@ export default function MarqueeText() {
               className="h-8 w-8"
             />
           </span>
-          <span className="text-4xl mx-6">DELIVERY</span>
-          <span className="text-4xl mx-6">
+          <span className="text-xl md:text-4xl mx-6">DELIVERY</span>
+          <span className="text-xl md:text-4xl mx-6">
             <Image
               src="/images/smoothinnercorner.svg"
               alt="star"
@@ -87,8 +87,8 @@ export default function MarqueeText() {
               className="h-8 w-8"
             />
           </span>
-          <span className="text-4xl mx-6">SAFETY</span>
-          <span className="text-4xl mx-6">
+          <span className="text-xl md:text-4xl mx-6">SAFETY</span>
+          <span className="text-xl md:text-4xl mx-6">
             <Image
               src="/images/smoothinnercorner.svg"
               alt="star"
