@@ -55,29 +55,16 @@ export default function NavigationBar() {
     }
   }, [isVisible, controls]);
 
-  // const toggleMobileMenu = () => {
-  //   setIsMobileMenuOpen(!isMobileMenuOpen);
-  // };
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    if (isOpen) {
-      controls.start("visible");
-    } else {
-      controls.start("hidden");
-    }
-  }, [isOpen, controls]);
-
   return (
     <>
-      {/* {!isMobileView && ( */}
       <header>
         <motion.div
           className="fixed top-0 left-0 right-0 z-50 bg-darkpint bg-opacity-95"
-          initial="hidden"
+          initial="visible"
           animate={controls}
           variants={navbarVariants}
           transition={{ duration: transitionDuration }}
@@ -158,7 +145,7 @@ export default function NavigationBar() {
                 </nav>
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="md:flex items-center gap-4 hidden">
                 <div className="sm:flex sm:gap-4">
                   <Link href="https://wa.link/qnedf4" target="_blank">
                     <Button variant="secondary">
@@ -178,43 +165,124 @@ export default function NavigationBar() {
           </div>
         </motion.div>
       </header>
-      {/* )} */}
-
-      {/* {isMobileView && (
-        <Navbar
-          fluid
-          rounded
-          className={
-            isMobileView
-              ? "fixed top-0 w-full z-50 bg-darkpint"
-              : "hidden md:block"
-          }
-        >
-          <Navbar.Brand href="/">
-            <Image
-              src="/logo/pintlogo.svg"
-              alt="logo"
-              width={128}
-              height={64}
-            />
-          </Navbar.Brand>
-          {isMobileView && (
-            <div className="flex md:order-2">
-              <Button>Hubungi Sekarang</Button>
-              <Navbar.Toggle onClick={toggleMobileMenu} />
+      {isOpen && (
+        <>
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-40" // Pastikan z-index lebih rendah dari sidebar
+            onClick={() => setIsOpen(false)}
+          ></div>
+          <motion.div
+            initial={{ x: -300 }}
+            animate={{ x: 0 }}
+            exit={{ x: -300 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="md:hidden fixed inset-0 overflow-hidden z-50"
+          >
+            <div className="relative w-64 h-full bg-darkpint shadow-xl">
+              <div className="flex items-center justify-between p-4 py-[18px] border-b border-gray-200">
+                <Link className="block text-teal-600" href="/">
+                  <span className="sr-only">Home</span>
+                  <Image
+                    src="/logo/pintlogo.svg"
+                    alt="logo"
+                    width={160}
+                    height={64}
+                    className="w-32 md:w-40"
+                  />
+                </Link>
+                <button onClick={() => setIsOpen(false)} className="text-white">
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <nav className="flex flex-col p-4">
+                <Link
+                  href="/"
+                  className="flex items-center p-2 text-white hover:bg-gray-700 rounded"
+                >
+                  <svg
+                    className="w-6 h-6 mr-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 12h18M3 6h18M3 18h18"
+                    />
+                  </svg>
+                  Home
+                </Link>
+                <Link
+                  href="/about"
+                  className="flex items-center p-2 text-white hover:bg-gray-700 rounded"
+                >
+                  <svg
+                    className="w-6 h-6 mr-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M16 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2"
+                    />
+                    <circle cx="10.5" cy="7" r="4" />
+                  </svg>
+                  About
+                </Link>
+                <Link
+                  href="/services"
+                  className="flex items-center p-2 text-white hover:bg-gray-700 rounded"
+                >
+                  <svg
+                    className="w-6 h-6 mr-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"
+                    />
+                  </svg>
+                  Services
+                </Link>
+              </nav>
             </div>
-          )}
-          <Navbar.Collapse className={isMobileMenuOpen ? "block" : "hidden"}>
-            <Navbar.Link href="#" active>
-              Home
-            </Navbar.Link>
-            <Navbar.Link href="#">About</Navbar.Link>
-            <Navbar.Link href="#">Services</Navbar.Link>
-            <Navbar.Link href="#">Pricing</Navbar.Link>
-            <Navbar.Link href="#">Contact</Navbar.Link>
-          </Navbar.Collapse>
-        </Navbar>
-      )} */}
+          </motion.div>
+        </>
+      )}
+      <Link href="https://wa.link/qnedf4" target="_blank" className="md:hidden">
+        <Button className="fixed z-50 bottom-10 right-4 rounded-full py-8 bg-green-500 shadow-xl hover:bg-green-300">
+          {/* <Button variant="secondary"> */}
+          <Image
+            src="/images/call-calling.svg"
+            alt="telp"
+            width={24}
+            height={24}
+            className="mr-2"
+          />
+          {/* </Button> */}
+        </Button>
+      </Link>
     </>
   );
 }
