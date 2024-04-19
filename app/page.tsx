@@ -6,6 +6,7 @@ import Member from "./[components]/main-page/member";
 import Galery from "./[components]/main-page/galery";
 import ServicesArea from "./[components]/main-page/servicearea";
 import { TypewriterEffectDemo } from "./[components]/main-page/cta";
+import Services2 from "./[components]/main-page/services2";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       {/* <AboutMainPage /> */}
       <WhyChooseUs />
+      <Services2 />
       <Services />
       <Member />
       {/* <Galery /> */}
