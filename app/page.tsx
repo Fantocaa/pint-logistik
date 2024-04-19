@@ -15,7 +15,7 @@ export default function Home() {
       {/* <AboutMainPage /> */}
       <WhyChooseUs />
       <Services2 />
-      <Services />
+      {/* <Services /> */}
       <Member />
       {/* <Galery /> */}
       {/* <ServicesArea /> */}
