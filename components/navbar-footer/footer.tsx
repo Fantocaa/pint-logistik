@@ -54,7 +54,7 @@ export default function Footer() {
 
           <div className="lg:flex lg:items-end lg:justify-between">
             <div>
-              <div className="flex justify-center text-teal-600 lg:justify-start mb-8">
+              <div className="flex justify-center text-teal-600 lg:justify-start ">
                 <Image
                   src="/logo/pintlogo.svg"
                   alt="logo"
@@ -63,9 +63,10 @@ export default function Footer() {
                 />
               </div>
 
-              {/* <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-100 lg:text-left">
-                
-              </p> */}
+              <p className="mx-auto max-w-md text-center leading-relaxed text-gray-100 lg:text-left my-8">
+                Komplek Ruko Semut Square Blok D no.11 Jalan Semut kali no.48-50
+                Kec. Pabean Cantikan, Surabaya
+              </p>
               <Link href="https://wa.link/qnedf4" target="_blank">
                 <Button variant="secondary">
                   <Image

@@ -29,7 +29,9 @@ export default function Member() {
                 </div>
                 <div className="hidden md:block">
                   <h1 className="text-4xl font-semibold">Irwan Handoko</h1>
-                  <h1 className="text-2xl pt-1 pb-4">Manager Area</h1>
+                  <h1 className="text-2xl pt-1 pb-4">
+                    Director of PT. PINT LOGISTIK INDONESIA
+                  </h1>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Omnis perferendis hic asperiores quibusdam quidem voluptates
@@ -61,7 +63,9 @@ export default function Member() {
             </div> */}
             <div className="md:hidden">
               <h1 className="text-4xl font-semibold">Irwan Handoko</h1>
-              <h1 className="text-2xl pt-1 pb-4">Manager Area</h1>
+              <h1 className="text-2xl pt-1 pb-4">
+                Director of PT. PINT LOGISTIK INDONESIA
+              </h1>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
                 perferendis hic asperiores quibusdam quidem voluptates
