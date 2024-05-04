@@ -65,7 +65,7 @@ export default function NavigationBar() {
         <motion.div
           className="fixed top-0 left-0 right-0 z-50 bg-darkpint bg-opacity-95"
           initial="visible"
-          animate={controls}
+          // animate={controls}
           variants={navbarVariants}
           transition={{ duration: transitionDuration }}
         >
