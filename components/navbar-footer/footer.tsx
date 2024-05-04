@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 export default function Footer() {
   const handleBackToTopClick = () => {
@@ -53,7 +54,7 @@ export default function Footer() {
 
           <div className="lg:flex lg:items-end lg:justify-between">
             <div>
-              <div className="flex justify-center text-teal-600 lg:justify-start">
+              <div className="flex justify-center text-teal-600 lg:justify-start mb-8">
                 <Image
                   src="/logo/pintlogo.svg"
                   alt="logo"
@@ -62,10 +63,21 @@ export default function Footer() {
                 />
               </div>
 
-              <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-100 lg:text-left">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Incidunt consequuntur amet culpa cum itaque neque.
-              </p>
+              {/* <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-100 lg:text-left">
+                
+              </p> */}
+              <Link href="https://wa.link/qnedf4" target="_blank">
+                <Button variant="secondary">
+                  <Image
+                    src="/images/call-calling.svg"
+                    alt="telp"
+                    width={24}
+                    height={24}
+                    className="mr-2"
+                  />
+                  Hubungi Kami
+                </Button>
+              </Link>
             </div>
 
             <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">

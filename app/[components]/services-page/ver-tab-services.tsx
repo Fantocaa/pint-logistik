@@ -1,7 +1,5 @@
 // "use client";
 
-import React, { useState } from "react";
-import { motion, useMotionValue, useTransform } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 
@@ -37,12 +35,6 @@ export default function ServicesTab() {
             >
               Multimoda
             </TabsTrigger>
-            <TabsTrigger
-              value="trailer"
-              className="px-4 md:px-24 py-4 text-gray-600"
-            >
-              Armada Trailer
-            </TabsTrigger>
           </TabsList>
           <TabsContent value="road">
             <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg h-96">
@@ -53,7 +45,7 @@ export default function ServicesTab() {
                 width={1080}
                 height={1080}
               />
-              <div className="relative pt-32 md:pt-56 bg-gradient-to-t from-gray-900 to-slate-900/5 h-full">
+              <div className="relative pt-32 md:pt-24 bg-gradient-to-t from-gray-900 to-slate-900/5 h-full">
                 <div className="p-4 sm:p-6">
                   <div>
                     <h3 className="mt-0.5 text-white font-bold text-xl md:text-4xl">
@@ -64,7 +56,20 @@ export default function ServicesTab() {
                   <p className="mt-2 text-base md:text-lg/relaxed text-white/95 ">
                     Kami menyediakan trucking jalur darat untuk beberapa tujuan
                     yaitu Jawa, Bali, dan Lombok serta jasa transportasi
-                    container kereta api tujuan Surabaya-Jakarta
+                    container kereta api tujuan Surabaya-Jakarta.
+                  </p>
+
+                  <p className="mt-2 text-base md:text-lg/relaxed text-white/95 ">
+                    Serta Kami mendapat support penih dari perusahaan trucking
+                    PT. ARMADA BERKAT ANUGERAH dibawah Holding Company PT. TAKO
+                    ANUGERAH KOPORASI.
+                  </p>
+
+                  <p className="mt-2 text-base md:text-lg/relaxed text-white/95 ">
+                    Jumlah armada yang dimiliki per tahun 2022 sudah mencapai 80
+                    unit trailer 20&apos;, 25 unit trailer 40&apos; di Surabaya
+                    dan juga beberapa armada yang tersedia di kantor-kantor
+                    cabang.
                   </p>
                 </div>
               </div>
@@ -117,39 +122,6 @@ export default function ServicesTab() {
                     dengan menggabungkan beberapa jenis transportasi untuk
                     pengiriman barang yang sulit dijangkau oleh transportasi
                     pada umumnya
-                  </p>
-                </div>
-              </div>
-            </article>
-          </TabsContent>
-          <TabsContent value="trailer">
-            <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg h-[480px] md:h-96">
-              <Image
-                alt="trailer"
-                src="/images/trailer.png"
-                className="absolute inset-0 w-full h-full object-cover object-bottom"
-                width={1080}
-                height={1080}
-              />
-              <div className="relative pt-5 md:pt-36 bg-gradient-to-t from-gray-900 to-slate-900/5 h-full">
-                <div className="p-4 sm:p-6">
-                  <div>
-                    <h3 className="mt-0.5 text-white font-bold text-xl md:text-4xl">
-                      Armada Trailer
-                    </h3>
-                  </div>
-
-                  <p className="mt-2 text-base md:text-lg/relaxed text-white/95 ">
-                    Kami mendapat support penih dari perusahaan trucking PT.
-                    ARMADA BERKAT ANUGERAH dibawah Holding Company PT. TAKO
-                    ANUGERAH KOPORASI.
-                  </p>
-
-                  <p className="mt-2 text-base md:text-lg/relaxed text-white/95 ">
-                    Jumlah armada yang dimiliki per tahun 2022 sudah mencapai 80
-                    unit trailer 20&apos;, 25 unit trailer 40&apos; di Surabaya
-                    dan juga beberapa armada yang tersedia di kantor-kantor
-                    cabang.
                   </p>
                 </div>
               </div>
