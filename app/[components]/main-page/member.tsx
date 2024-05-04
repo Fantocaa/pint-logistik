@@ -30,13 +30,13 @@ export default function Member() {
                 <div className="hidden md:block">
                   <h1 className="text-4xl font-semibold">Irwan Handoko</h1>
                   <h1 className="text-2xl pt-1 pb-4">
-                    Director of PT. PINT LOGISTIK INDONESIA
+                    Director PT. PINT LOGISTIK INDONESIA
                   </h1>
-                  <p>
+                  {/* <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Omnis perferendis hic asperiores quibusdam quidem voluptates
                     doloremque reiciendis nostrum harum. Repudiandae?
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
