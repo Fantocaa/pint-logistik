@@ -52,7 +52,7 @@ export default function Header() {
       </div>
       {/* </div> */}
       <ImageTextHeader />
-      <MarqueeText />
+      {/* <MarqueeText /> */}
       {/* </section> */}
     </>
   );

@@ -36,7 +36,7 @@ export default function Services2() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center py-8 w-full">
-            <Link href="/services">
+            {/* <Link href="/services">
               <div className="group relative block overflow-hidden rounded-xl bg-darkpint">
                 <div className="relative h-64">
                   <Image
@@ -62,15 +62,15 @@ export default function Services2() {
                   </div>
                 </div>
               </div>
-            </Link>
-            <Link href="/services">
+            </Link> */}
+            <Link href="/services" className="col-span-2">
               <div className="group relative block overflow-hidden rounded-xl bg-darkpint">
                 <div className="relative h-64">
                   <Image
                     src="/images/sea.png"
                     alt="air"
-                    width={500}
-                    height={500}
+                    width={2500}
+                    height={2500}
                     className="w-full h-full object-cover transition-all duration-500 scale-105 md:scale-100 md:group-hover:scale-105 md:opacity-100 md:group-hover:opacity-30 opacity-30"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -94,7 +94,7 @@ export default function Services2() {
               <div className="group relative block overflow-hidden rounded-xl bg-darkpint">
                 <div className="relative h-64">
                   <Image
-                    src="/images/road.png"
+                    src="/images/image28.jpg"
                     alt="air"
                     width={500}
                     height={500}
@@ -121,7 +121,7 @@ export default function Services2() {
               <div className="group relative block overflow-hidden rounded-xl bg-darkpint">
                 <div className="relative h-64">
                   <Image
-                    src="/images/multimoda.png"
+                    src="/images/image 27.png"
                     alt="air"
                     width={500}
                     height={500}
