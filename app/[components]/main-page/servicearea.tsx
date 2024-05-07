@@ -68,7 +68,7 @@ export default function ServicesArea() {
           <h1 className="text-white text-center pb-4 text-xl">
             Our Services Area
           </h1>
-          <div className=" md:max-w-screen-md 2xl:max-w-screen-lg mx-auto pb-32 flex flex-col items-center">
+          <div className=" md:max-w-screen-md 2xl:max-w-screen-lg mx-auto pb-8 md:pb-32 flex flex-col items-center">
             <TypewriterEffect words={words} className="text-center text-2xl" />
             <Link href="https://wa.link/qnedf4">
               <Button className="mt-4" variant={"secondary"}>

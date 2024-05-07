@@ -9,7 +9,8 @@ export default function ImageHeader() {
         alt="header"
         width={2560}
         height={2560}
-        className="w-full mx-auto xl:object-top xl:h-96 2xl:h-full object-cover"
+        // className="w-full mx-auto xl:object-top xl:h-96 2xl:h-full object-cover"
+        className="w-full mx-auto h-96 2xl:h-[640px] object-cover"
       />
     </div>
   );

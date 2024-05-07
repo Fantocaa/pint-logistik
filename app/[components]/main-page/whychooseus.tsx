@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
 
               <h2 className="mt-2 font-bold text-2xl">Commitment</h2>
 
-              <p className="hidden sm:mt-1 sm:block sm:text-base sm:text-gray-600">
+              <p className="sm:mt-1 sm:block sm:text-base sm:text-gray-600">
                 Solusi logistik yang bertanggung jawab, andal, dan fleksibel,
                 dirancang khusus untuk memenuhi kebutuhan bisnis Anda.
               </p>
@@ -80,7 +80,7 @@ export default function WhyChooseUs() {
 
               <h2 className="mt-2 font-bold text-2xl">Accurate</h2>
 
-              <p className="hidden sm:mt-1 sm:block sm:text-base sm:text-gray-600">
+              <p className="sm:mt-1 sm:block sm:text-base sm:text-gray-600">
                 Kami memastikan menjalankan tugas dengan baik tanpa ada
                 kesalahan untuk layanan terbaik kepada pelanggan kami.
               </p>
@@ -118,7 +118,7 @@ export default function WhyChooseUs() {
 
               <h2 className="mt-2 font-bold text-2xl">Responsive</h2>
 
-              <p className="hidden sm:mt-1 sm:block sm:text-base sm:text-gray-600">
+              <p className="sm:mt-1 sm:block sm:text-base sm:text-gray-600">
                 Mampu memberikan respon yang cepat dan tanggap dalam melayani
                 permintaan customer. Kami siap menjadi jawaban dari kebutuhan
                 logistik anda.
@@ -160,7 +160,7 @@ export default function WhyChooseUs() {
 
               <h2 className="mt-2 font-bold text-2xl">Excelent Services</h2>
 
-              <p className="hidden sm:mt-1 sm:block sm:text-base sm:text-gray-600">
+              <p className="sm:mt-1 sm:block sm:text-base sm:text-gray-600">
                 Kami memastikan menjalankan tugas dengan baik tanpa ada
                 kesalahan untuk layanan terbaik kepada pelanggan kami.
               </p>

@@ -14,7 +14,7 @@ export default function Header() {
       {/* <div className="relative h-full w-full bg-white"> */}
       {/* <div className=" absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div> */}
       {/* <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div> */}
-      <div className="relative mx-auto max-w-screen-xl px-4 pt-32 pb-16 sm:px-6 lg:flex lg:items-center lg:px-8 justify-between">
+      <div className="relative mx-auto max-w-screen-xl px-4 pt-32 pb-12 sm:px-6 lg:flex lg:items-center lg:px-8 justify-between">
         <div className="text-left ltr:sm:text-left rtl:sm:text-right max-w-xl">
           <h3>About Us</h3>
           {/* <Image

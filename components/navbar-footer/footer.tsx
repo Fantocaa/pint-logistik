@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           <div className="lg:flex lg:items-end lg:justify-between">
-            <div>
+            <div className="flex flex-col items-center md:block">
               <div className="flex justify-center text-teal-600 lg:justify-start ">
                 <Image
                   src="/logo/pintlogo.svg"

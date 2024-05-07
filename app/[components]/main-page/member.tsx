@@ -43,8 +43,8 @@ export default function Member() {
             <div>
               <Image
                 alt="pp"
-                src="/images/irwan.webp"
-                className="h-[32rem] md:max-w-md object-cover rounded-xl object-top py-8 md:py-0"
+                src="/images/irwan.jpg"
+                className="h-[28rem] md:max-w-md object-cover rounded-xl py-8 md:py-0 object-top"
                 width={1080}
                 height={1080}
               />

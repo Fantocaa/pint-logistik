@@ -26,7 +26,7 @@ export default function Services2() {
                 <span className="text-bluepint-500">Packages</span>
               </h1>
             </div>
-            <div className="max-w-md col-span-2 z-10">
+            <div className="max-w-md md:col-span-2 z-10">
               <h1>
                 PT. PINT INDONESIA LOGISTIK provides several shipping methods
                 which have their respective advantages, choose the method that
