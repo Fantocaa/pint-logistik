@@ -63,7 +63,7 @@ export default function Services2() {
                 </div>
               </div>
             </Link> */}
-            <Link href="/services" className="col-span-2">
+            <Link href="/services" className="col-span-1 md:col-span-2">
               <div className="group relative block overflow-hidden rounded-xl bg-darkpint">
                 <div className="relative h-64">
                   <Image
