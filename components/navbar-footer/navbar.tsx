@@ -147,7 +147,10 @@ export default function NavigationBar() {
 
               <div className="md:flex items-center gap-4 hidden">
                 <div className="sm:flex sm:gap-4">
-                  <Link href="https://wa.link/qnedf4" target="_blank">
+                  <Link
+                    href="https://api.whatsapp.com/send?phone=6281234511768"
+                    target="_blank"
+                  >
                     <Button variant="secondary">
                       <Image
                         src="/images/call-calling.svg"
